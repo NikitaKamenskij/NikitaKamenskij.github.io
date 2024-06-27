@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Car Dealer</title>
+  <style>
+    #cars {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    #cars li {
+      margin: 10px;
+    }
+    #cars img { 
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Car Dealer</h1>
+  <form id="authForm">
+    <input type="text" id="username" placeholder="Имя пользователя" required>
+    <input type="password" id="password" placeholder="Пароль" required>
+    <button type="submit">Отправить</button>
+  </form>
+  <div id="authMessage"></div>
+  <button id="switchToRegister" style="display: none;">Зарегистрироваться</button>
+  <button id="switchToLogin">Войти</button>
+
+  <form id="add-car-form" style="display: none;">
+    <label for="model">Модель:</label>
+    <input type="text" id="model" name="model"><br><br>
+    <label for="year">Год:</label>
+    <input type="number" id="year" name="year"><br><br>
+    <label for="price">Цена:</label>
+    <input type="number" id="price" name="price"><br><br>
+    <label for="image">Фото:</label>
+    <input type="file" id="image" name="image" accept="image/*"><br><br>
+    <input type="submit" value="Add Car">
+  </form>
+  <ul id="cars"></ul>
+
+  <script src="script.js"></script>
+</body>
+</html>

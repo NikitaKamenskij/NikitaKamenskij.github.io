@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Авторизация и Регистрация</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="auth-container">
+        <h2 id="formTitle">Авторизация</h2>
+        <form id="authForm">
+            <input type="text" id="username" placeholder="Имя пользователя" required>
+            <input type="password" id="password" placeholder="Пароль" required>
+            <button type="submit">Отправить</button>
+        </form>
+        <button id="switchToRegister" class="switch-button">Регистрация</button>
+        <button id="switchToLogin" class="switch-button" style="display: none;">Авторизация</button>
+        <p id="authMessage"></p>
+        <button id="logoutButton" style="display: none;">Выйти</button>
+    </div>
+    <div id="adminContent" style="display: none;">
+        <h3>Контент для администратора</h3>
+        <!-- Добавьте здесь контент, доступный только администратору -->
+    </div>
+    <div id="userContent" style="display: none;">
+        <h3>Контент для пользователя</h3>
+        <!-- Добавьте здесь контент, доступный обычным пользователям -->
+    </div>
+
+    <script src="script.js"></script>
+    <script src="index.html"></script>
+</body>
+</html>
